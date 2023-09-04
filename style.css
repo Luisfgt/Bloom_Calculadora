@@ -12,6 +12,7 @@ p {
 }
 
 body {
+    font-family: 50px;
     padding: 10%;
     gap: 100px;
     display: flex;
