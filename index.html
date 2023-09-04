@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bloom</title>
+</head>
+
+<body>
+    <div>
+        <img src="LOGO BLOOM/SVG/Recurso 1.svg" alt="lOGO" width=200px>
+        <p>¡Ahora puedes calcular como más gustes, con una calculadora solo para tí!</p>
+    </div>
+    <div class="cuerpo">
+        <div class="display">
+            <input type="text" class="displayInterno" id="display" disabled>
+        </div>
+        <div class="numbers">
+            <div class="borrar">
+                <button  class="borrarInterno" onclick="limpiarDisplay()">C</button>
+            </div>
+            <div class="numberAlign">
+                <button class="number" onclick="marcar('7')">7</button>
+                <button class="number" onclick="marcar('8')">8</button>
+                <button class="number" onclick="marcar('9')">9</button>
+                <button class="number" onclick="marcar('+')">+</button>
+            </div>
+            <div class="numberAlign">
+                <button class="number" onclick="marcar('4')">4</button>
+                <button class="number" onclick="marcar('5')">5</button>
+                <button class="number" onclick="marcar('6')">6</button>
+                <button class="number" onclick="marcar('-')">-</button>
+            </div>
+            <div class="numberAlign">
+                <button class="number" onclick="marcar('1')">1</button>
+                <button class="number" onclick="marcar('2')">2</button>
+                <button class="number" onclick="marcar('3')">3</button>
+                <button class="number" onclick="marcar('*')">*</button>
+            </div>
+            <div class="numberAlign">
+                <button class="number" onclick="marcar('0')">0</button>
+                <button class="number" onclick="marcar('.')">.</button>
+                <button class="number" onclick="calcularResult()">=</button>
+                <button class="number" onclick="marcar('/')">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
